@@ -1,0 +1,11 @@
+h1 {
+    position: center;
+}
+
+.container {
+    width: 80%;
+    flex-direction: column;
+    position: center;
+    background-color: lightblue;
+}
+

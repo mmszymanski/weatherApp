@@ -5,6 +5,7 @@
     <title>Simple weather app</title>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -16,14 +17,14 @@
         <div>
             <label for="city_name">Fill in your location: </label>
             <input id="city_name" type="text">
-            <button type="submit">Check weather</button>
+            <button type="submit">Check forecast</button>
         </div>
     </form>
 
 </div>
 
 <script>
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q={city name}&APPID=9c398cd4cf22ab63cebf65a655f9d64d', {
+    fetch('http://api.openweathermap.org/data/2.5/forecast?q=city_name&APPID=9c398cd4cf22ab63cebf65a655f9d64d', {
         method: 'GET'
     }).then(function (response) {
         console.log(response);
